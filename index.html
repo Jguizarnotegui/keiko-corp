@@ -205,28 +205,28 @@
 </p></footer>
 <script>
 const loadStyleSheet = src => {
-			if(document.createStylesheet) {
-				document.createStylesheet(src);
-			} else {
-				const stylesheet = document.createElement('link');
-				stylesheet.href = src;
-				stylesheet.type =  'text/css';
-				stylesheet.rel = 'stylesheet';
-				document.getElementsByTagName('head')[0].appendChild(stylesheet);
-			}
-		}
-		window.onload = function() {
-			console.log('window done');
-			loadStyleSheet('./css/owl.css');
-		}
+	if(document.createStylesheet) {
+		document.createStylesheet(src);
+	} else {
+		const stylesheet = document.createElement('link');
+		stylesheet.href = src;
+		stylesheet.type =  'text/css';
+		stylesheet.rel = 'stylesheet';
+		document.getElementsByTagName('head')[0].appendChild(stylesheet);
+	}
+}
+window.onload = function() {
+	console.log('window done');
+	loadStyleSheet('./css/owl.css');
+}
 </script>
 <script src=js/jquery.js></script>
 <script src=js/ajaxchimp.js></script>
-<script src=js/owl.carousel.min.js></script>
+<script defer src=js/owl.carousel.min.js></script>
 <script src=js/wow.js></script>
 <script src=js/parallax.js></script>
-<script src=js/nicescroll.js></script>
+<script defer src=js/nicescroll.js></script>
 <script src=js/main.js></script>
-<script src=js/scrollTo.js></script>
+<script defer src=js/scrollTo.js></script>
 </body>
 </html>
